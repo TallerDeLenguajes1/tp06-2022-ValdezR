@@ -47,7 +47,6 @@ namespace ejercicio1
                     Console.WriteLine("Ingrese el numero con el que desea operar: ");
                     numero = double.Parse(Console.ReadLine());
 
-                    Console.WriteLine($"El resultado es: {calculadora.Acceder()}\n");
                     switch(operacion)
                     {
                         case 1:
@@ -66,6 +65,7 @@ namespace ejercicio1
                             calculadora.Limpiar();
                             break;
                     }
+                    Console.WriteLine($"El resultado es: {calculadora.Acceder()}\n");
                 } else
                     flags=1;
             }
